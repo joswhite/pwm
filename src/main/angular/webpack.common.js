@@ -23,6 +23,7 @@
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var autoPrefixer = require('autoprefixer');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var path = require('path');
 var webpack = require('webpack');
 
@@ -89,7 +90,13 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'index.html',
             inject: 'body'
-        })
+        }),
+        new CopyWebpackPlugin([
+            { from: 'node_modules/ias-icons/dist/ias-icons.css', to: 'vendor/' },
+            { from: 'node_modules/ias-icons/dist/fonts/', to: 'vendor/fonts/' },
+            { from: 'node_modules/ng-ias/dist/ng-ias.css', to: 'vendor/' },
+            { from: 'node_modules/ng-ias/dist/ng-ias.js', to: 'vendor/' }
+        ])
     ],
     postcss: function() {
         return [

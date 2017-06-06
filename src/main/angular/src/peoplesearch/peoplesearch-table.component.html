@@ -64,6 +64,32 @@
                          value="'person.' + key">
         </mf-table-column>
     </mf-table>
+    <table ias-sort="$ctrl.sort" class="configurable-table">
+        <thead>
+            <tr>
+                <th ng-repeat="column in $ctrl.getVisibleColumns()" ias-sort-on="column.valueExpression">{{column.label}}</th>
+                <th class="table-configuration-column">
+                    <div class="table-configuration">
+                        <mf-icon-button icon="configure_thin" ng-click="$ctrl.toggleConfigurationVisibility($event)"></mf-icon-button>
+                        <ul ng-if="$ctrl.showConfiguration" ng-click="$event.stopPropagation()">
+                            <li ng-repeat="column in $ctrl.columns">
+                                <label class="label">
+                                    <input name="column-visibile" type="checkbox" ng-model="column.visible" aria-label="Toggle column visibility"/>
+                                    {{column.label}}
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="person in $ctrl.searchResult.people | orderBy:$ctrl.sort">
+                <td ng-repeat="column in $ctrl.getVisibleColumns()">{{person[column.valueExpression]}}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 
     <ui-view></ui-view>
 </div>

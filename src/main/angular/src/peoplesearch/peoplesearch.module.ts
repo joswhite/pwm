@@ -40,6 +40,7 @@ const moduleName = 'people-search';
 
 module(moduleName, [
     'pascalprecht.translate',
+    'ng-ias',
     uxModule
 ])
     .filter('fullName', FullNameFilter)
