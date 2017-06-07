@@ -53,27 +53,27 @@ mf-search-bar {
     left: 0;
   }
 
-  mf-icon {
+  ias-icon {
     color: #808080;
     font-size: 16px;
   }
 
-  > mf-icon-button {
+  > .ias-icon-button {
     > button {
       &:focus,
       &:hover {
         background-color: transparent;
         border-color: transparent;
 
-        > mf-icon {
+        > ias-icon {
           color: #0088ce;
         }
       }
     }
   }
 
-  > mf-icon,
-  > mf-icon-button {
+  > ias-icon,
+  > .ias-icon-button {
     height: $mf-search-bar-height - 2px;
     padding: 0;
     position: absolute;

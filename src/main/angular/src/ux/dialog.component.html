@@ -22,7 +22,9 @@
 
 <div class="scrim" ng-click="$ctrl.closeDialog()"></div>
 <div class="mf-dialog-container">
-    <mf-icon-button icon="close_thick" ng-click="$ctrl.closeDialog()"></mf-icon-button>
+    <ias-button class="ias-icon-button" ng-click="$ctrl.closeDialog()">
+        <ias-icon icon="close_thick"></ias-icon>
+    </ias-button>
 
     <ng-transclude></ng-transclude>
 </div>

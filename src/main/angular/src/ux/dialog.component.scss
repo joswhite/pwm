@@ -45,7 +45,7 @@ mf-dialog {
     top: 0;
     width: 100%;
 
-    > mf-icon-button {
+    > .ias-icon-button {
       position: absolute;
       right: 1px;
       top: 1px;
@@ -80,7 +80,7 @@ mf-dialog {
 [dir="rtl"] {
   mf-dialog {
     > .mf-dialog-container {
-      > mf-icon-button {
+      > .ias-icon-button {
         right: auto;
         left: 1px;
       }

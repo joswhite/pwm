@@ -28,23 +28,26 @@
                    on-key-down="$ctrl.onSearchBoxKeyDown($event)"
                    auto-focus></mf-search-bar>
     <span flex></span>
-    <mf-icon-button
-            icon="view-tile"
-            id="view-title-button"
-            ng-click="$ctrl.gotoCardsView()"
-            ng-attr-title="{{ 'Title_PeopleSearch' | translate }}"></mf-icon-button>
-    <mf-icon-button
-            icon="view-list"
-            id="view-list-button"
-            disabled="true"
-            ng-attr-title="{{ 'Title_PeopleSearch' | translate }}"></mf-icon-button>
-    <div class="mf-divider vertical" ng-if="$ctrl.orgChartEnabled"></div>
-    <mf-icon-button
-            icon="orgchart"
-            id="view-orgchart-button"
-            ng-click="$ctrl.gotoOrgchart()"
-            ng-if="$ctrl.orgChartEnabled"
-            ng-attr-title="{{ 'Title_OrgChart' | translate }}"></mf-icon-button>
+    <ias-button class="ias-icon-button"
+                ng-click="$ctrl.gotoCardsView()"
+                ng-attr-title="{{ 'Title_PeopleSearch' | translate }}"
+                id="view-tile-icon">
+        <ias-icon icon="view_tile_thin"></ias-icon>
+    </ias-button>
+    <ias-button class="ias-icon-button"
+                disabled="true"
+                ng-attr-title="{{ 'Title_PeopleSearch' | translate }}"
+                id="view-list-icon">
+        <ias-icon icon="view_list_thin"></ias-icon>
+    </ias-button>
+    <div class="mf-divider vertical"></div>
+    <ias-button class="ias-icon-button"
+                ng-click="$ctrl.gotoOrgchart()"
+                ng-if="$ctrl.orgChartEnabled"
+                ng-attr-title="{{ 'Title_OrgChart' | translate }}"
+                id="orgchart-icon">
+        <ias-icon icon="orgchart_thin"></ias-icon>
+    </ias-button>
 </mf-app-bar>
 
 <div class="people-search-component-content">
@@ -70,7 +73,9 @@
                 <th ng-repeat="column in $ctrl.getVisibleColumns()" ias-sort-on="column.valueExpression">{{column.label}}</th>
                 <th class="table-configuration-column">
                     <div class="table-configuration">
-                        <mf-icon-button icon="configure_thin" ng-click="$ctrl.toggleConfigurationVisibility($event)"></mf-icon-button>
+                        <ias-button class="ias-icon-button" ng-click="$ctrl.toggleConfigurationVisibility($event)">
+                            <ias-icon icon="configure_thin"></ias-icon>
+                        </ias-button>
                         <ul ng-if="$ctrl.showConfiguration" ng-click="$event.stopPropagation()">
                             <li ng-repeat="column in $ctrl.columns">
                                 <label class="label">

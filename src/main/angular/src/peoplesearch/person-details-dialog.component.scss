@@ -30,7 +30,7 @@
     > .person-details-header {
       background-color: #eef2f2;
 
-      > mf-button {
+      > button {
         margin: 0 0 10px 0;
       }
 
@@ -79,15 +79,13 @@
               > .detail-container {
                 > ul {
                   > li {
-                    > mf-icon-button {
-                      display: inline-block;
-                      height: 16px;
-                      width: 16px;
+                    > span {
+                      line-height: 18px;
+                    }
 
-                      > button {
-                        > mf-icon {
-                          font-size: 16px;
-                        }
+                    > .ias-icon-button {
+                      > ias-icon {
+                        font-size: 16px;
                       }
                     }
                   }

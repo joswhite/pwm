@@ -20,7 +20,7 @@
   ~ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
   -->
 
-<mf-icon class="search-icon" icon="search_thick"></mf-icon>
+<ias-icon class="search-icon" icon="search_thick"></ias-icon>
 <input type="text"
        id="search-bar"
        ng-blur="$ctrl.onBlur({ $event: $event })"
@@ -30,5 +30,8 @@
        ng-model-options="{ debounce: $ctrl.inputDebounce }"
        ng-attr-placeholder="{{ ('Placeholder_Search' | translate) }}"
        autocomplete="off" />
-<mf-icon-button class="clear-input" icon="close_thick" ng-click="$ctrl.clearSearchText()"></mf-icon-button>
+<ias-button class="clear-input ias-icon-button"
+            ng-click="$ctrl.clearSearchText()">
+    <ias-icon icon="close_thick"></ias-icon>
+</ias-button>
 <!-- loader graphic -->
