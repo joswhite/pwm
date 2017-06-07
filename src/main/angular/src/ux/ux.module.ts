@@ -24,9 +24,7 @@
 import { module } from 'angular';
 import AppBarComponent from './app-bar.component';
 import AutoCompleteComponent from './auto-complete.component';
-import ButtonComponent from './button.component';
 import DialogComponent from './dialog.component';
-// import { DialogService } from './dialog.service';
 import SearchBarComponent from './search-bar.component';
 import TableDirectiveFactory from './table.directive';
 import TableColumnDirectiveFactory from './table-column.directive';
@@ -37,12 +35,10 @@ var moduleName = 'peoplesearch.ux';
 module(moduleName, [ ])
     .component('mfAppBar', AppBarComponent)
     .component('mfAutoComplete', AutoCompleteComponent)
-    .component('mfButton', ButtonComponent)
     .component('mfDialog', DialogComponent)
     .component('mfSearchBar', SearchBarComponent)
     .directive('mfTable', TableDirectiveFactory)
     .directive('mfTableColumn', TableColumnDirectiveFactory)
     .service('MfElementSizeService', ElementSizeService);
-    // .service('MfDialogService', DialogService);
 
 export default moduleName;
