@@ -35,7 +35,6 @@ import { IPeopleService } from '../services/people.service';
         size: '@',
         showDirectReportCount: '<'
     },
-    stylesheetUrl: require('peoplesearch/person-card.component.scss'),
     templateUrl: require('peoplesearch/person-card.component.html')
 })
 export default class PersonCardComponent {

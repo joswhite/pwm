@@ -24,7 +24,6 @@
 import { IAttributes, IAugmentedJQuery, IDirective, IDocumentService, IParseService, IScope } from 'angular';
 import TableDirectiveController from './table.directive.controller';
 
-require('ux/table.directive.scss');
 const templateUrl = require('ux/table.directive.html');
 
 class DataExpression {

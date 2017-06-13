@@ -34,8 +34,6 @@ import LocalStorageService from '../services/local-storage.service';
 import PromiseService from '../services/promise.service';
 import uxModule from '../ux/ux.module';
 
-require('./peoplesearch.scss');
-
 const moduleName = 'people-search';
 
 module(moduleName, [

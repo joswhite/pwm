@@ -35,8 +35,7 @@ import { IAugmentedJQuery, ICompileService, IScope } from 'angular';
         onKeyDown: '&',
         searchText: '<'
     },
-    templateUrl: require('ux/search-bar.component.html'),
-    stylesheetUrl: require('ux/search-bar.component.scss')
+    templateUrl: require('ux/search-bar.component.html')
 })
 export default class SearchBarComponent {
     autoFocus: boolean;

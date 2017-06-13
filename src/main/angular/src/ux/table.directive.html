@@ -41,9 +41,6 @@
                     <ias-button class="ias-icon-button" ng-click="table.toggleConfigurationVisibility($event)">
                         <ias-icon icon="configure_thin"></ias-icon>
                     </ias-button>
-                    <ias-button class="ias-icon-button" ng-click="table.toggleConfigurationVisibility($event)">
-                        <ias-icon icon="configure_thin"></ias-icon>
-                    </ias-button>
                     <ul ng-if="table.showConfiguration" ng-click="$event.stopPropagation()">
                         <li ng-repeat="column in table.columns">
                             <label class="label">

@@ -28,7 +28,6 @@ import { IDocumentService } from 'angular';
     bindings: {
         onClose: '&'
     },
-    stylesheetUrl: require('ux/dialog.component.scss'),
     templateUrl: require('ux/dialog.component.html'),
     transclude: true
 })

@@ -31,7 +31,6 @@ import OrgChartData from '../models/orgchart-data.model';
 import { IPerson } from '../models/person.model';
 
 @Component({
-    stylesheetUrl: require('peoplesearch/orgchart-search.component.scss'),
     templateUrl: require('peoplesearch/orgchart-search.component.html')
 })
 export default class OrgChartSearchComponent {

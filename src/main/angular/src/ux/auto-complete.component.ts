@@ -60,8 +60,7 @@ import { IAttributes, IAugmentedJQuery, IDocumentService, IPromise, IScope } fro
                         <span translate="Display_SearchResultsNone"></span>
                     </li>
                 </ul>`;
-        }],
-    stylesheetUrl: require('ux/auto-complete.component.scss')
+        }]
 })
 export default class AutoCompleteComponent {
     item: string;

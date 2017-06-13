@@ -31,9 +31,6 @@ import routeErrorHandler from './route-error-handler';
 import TranslationsLoaderFactory from './services/translations-loader.factory';
 import uiRouter from 'angular-ui-router';
 
-// fontgen-loader needs this :(
-require('./icons.json');
-
 module('app', [
     uiRouter,
     peopleSearchModule,

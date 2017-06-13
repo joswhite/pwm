@@ -32,7 +32,6 @@ import PromiseService from '../services/promise.service';
 import SearchResult from '../models/search-result.model';
 
 @Component({
-    stylesheetUrl: require('peoplesearch/peoplesearch-table.component.scss'),
     templateUrl: require('peoplesearch/peoplesearch-table.component.html')
 })
 export default class PeopleSearchTableComponent extends PeopleSearchBaseComponent {

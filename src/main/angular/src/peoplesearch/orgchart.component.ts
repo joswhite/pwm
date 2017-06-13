@@ -41,7 +41,6 @@ export enum OrgChartSize {
         person: '<',
         showImages: '<'
     },
-    stylesheetUrl: require('peoplesearch/orgchart.component.scss'),
     templateUrl: require('peoplesearch/orgchart.component.html')
 })
 export default class OrgChartComponent {

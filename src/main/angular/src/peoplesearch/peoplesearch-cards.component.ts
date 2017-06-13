@@ -40,7 +40,6 @@ export enum PeopleSearchCardsSize {
 }
 
 @Component({
-    stylesheetUrl: require('peoplesearch/peoplesearch-cards.component.scss'),
     templateUrl: require('peoplesearch/peoplesearch-cards.component.html')
 })
 export default class PeopleSearchCardsComponent extends PeopleSearchBaseComponent {
