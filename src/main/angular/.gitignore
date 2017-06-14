@@ -4,9 +4,6 @@
 # Generated Javascript files
 /src/**/*.js
 
-# Build output
-/dist
-
 # IDEA personal files
 /.idea/workspace.xml
 

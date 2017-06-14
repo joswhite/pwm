@@ -20,14 +20,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-
-import { IAngularEvent, IRootScopeService } from 'angular';
-import { IStateService } from 'angular-ui-router';
-
 export default [
     '$transitions',
     '$state',
-    ($transitions, $state: IStateService) => {
+    ($transitions, $state: angular.ui.IStateService) => {
         $transitions.onError({}, (transition) => {
             if (transition._error === 'OrgChart disabled') {
                 $state.go('search.cards');
