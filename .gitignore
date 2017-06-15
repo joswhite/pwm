@@ -17,6 +17,9 @@
 .DS_Store
 .DS_Store?
 
+# NodeJS and NPM Files
+/.npm
+/.v8flags.*.json
 
 # Older PWM versions defaulted the applicationPath dir to WEB-INF.  This section ignores them if the applicationPath is set to WEB-INF.
 /src/main/webapp/WEB-INF/logs
