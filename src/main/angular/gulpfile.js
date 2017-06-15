@@ -10,7 +10,7 @@ var path = require('path');
 // Output to where assets are served in production
 var outputDirectory = '../webapp/public/resources/app';
 
-// Most images only for development, so check whether this is a production build
+// Images only for development, so check whether this is a production build
 var args = process.argv.slice(2);
 var PRODUCTION = false;
 args.forEach(function(arg) {
@@ -18,7 +18,7 @@ args.forEach(function(arg) {
         PRODUCTION = true;
     }
 });
-var imagesPath = PRODUCTION ? 'images/user.png' : 'images/**/*.{png,gif,jpg,svg}';
+var imagesPath = PRODUCTION ? [] : 'images/**/*.{png,gif,jpg,svg}';
 
 function exclude(path) {
     return '!' + path;
